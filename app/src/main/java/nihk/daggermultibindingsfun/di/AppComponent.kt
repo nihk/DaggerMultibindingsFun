@@ -3,12 +3,12 @@ package nihk.daggermultibindingsfun.di
 import android.content.Context
 import dagger.BindsInstance
 import dagger.Component
-import nihk.daggermultibindingsfun.initializer.AppInitializers
+import nihk.daggermultibindingsfun.initializer.AppInitializer
 
 @Component(modules = [InitializerModule::class])
 interface AppComponent {
 
-    fun appInitializers(): AppInitializers
+    fun appInitializer(): AppInitializer
 
     @Component.Builder
     interface Builder {

@@ -15,6 +15,6 @@ class App : Application() {
     override fun onCreate() {
         super.onCreate()
 
-        appComponent.appInitializers().initialize()
+        appComponent.appInitializer().initialize()
     }
 }

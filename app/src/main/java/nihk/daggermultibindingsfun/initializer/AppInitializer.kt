@@ -2,7 +2,7 @@ package nihk.daggermultibindingsfun.initializer
 
 import javax.inject.Inject
 
-class AppInitializers @Inject constructor(
+class AppInitializer @Inject constructor(
     private val initializers: Set<@JvmSuppressWildcards Initializer>
 ) : Initializer {
 
