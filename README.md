@@ -1,5 +1,6 @@
 # DaggerMultibindingsFun
-Facilitating dependency initialization with Dagger2 multibindings
+Facilitating dependency initialization with Dagger2 multibindings.
+
 
 Accompanying code to my Medium article:
 
