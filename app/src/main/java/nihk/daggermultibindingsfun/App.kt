@@ -3,7 +3,6 @@ package nihk.daggermultibindingsfun
 import android.app.Application
 import nihk.daggermultibindingsfun.di.AppComponent
 import nihk.daggermultibindingsfun.di.DaggerAppComponent
-import nihk.daggermultibindingsfun.initializer.Initializer
 
 class App : Application() {
 
@@ -16,7 +15,6 @@ class App : Application() {
     override fun onCreate() {
         super.onCreate()
 
-        appComponent.initializers()
-            .forEach(Initializer::initialize)
+        appComponent.appInitializers().initialize()
     }
 }

@@ -3,12 +3,12 @@ package nihk.daggermultibindingsfun.di
 import android.content.Context
 import dagger.BindsInstance
 import dagger.Component
-import nihk.daggermultibindingsfun.initializer.Initializer
+import nihk.daggermultibindingsfun.initializer.AppInitializers
 
 @Component(modules = [InitializerModule::class])
 interface AppComponent {
 
-    fun initializers(): Set<@JvmSuppressWildcards Initializer>
+    fun appInitializers(): AppInitializers
 
     @Component.Builder
     interface Builder {
